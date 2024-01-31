@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-export const ReactComponent = () => {
-  return (
-    <div className='bg-red-400'>ReactComponent</div>
-  )
-}
+export const ReactComponent: React.FunctionComponent = () => {
+  return <div className='bg-red-400'>ReactComponent</div>;
+};
