@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         base: ['Space Grotesk Variable', 'sans-serif'],
       },
+      fontSize: {
+        'page-title': ['3rem', '61px'],
+      },
     },
   },
   plugins: [],
