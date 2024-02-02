@@ -1,32 +1,43 @@
 ---
+import PrimaryButton from '../components/PrimaryButton';
+import ArrowRight from '../components/ArrowRight';
 import Layout from '../layouts/Layout.astro';
-import NavBar from '../components/NavBar.tsx';
 ---
 
 <Layout title='Upward web'>
-  <NavBar />
-  <main>
+  <main class='flex flex-col gap-8'>
     <h1 class='font-base text-page-title'>
       Tu agencia de Desarrollo Digital <span class='text-gradient'
         >a medida</span
       >
     </h1>
+    <p class='text-base'>
+      Somos un equipo de jóvenes apasionados por la tecnología y la innovación.
+      El futuro llega cada vez más rápido y queremos ser parte de ese proceso de
+      transformación. Pero como no queremos hacerlo solos, trabajamos para
+      ayudarte a alcanzar el futuro que tu negocio esté listo para los nuevos
+      desafíos del mundo digital.
+    </p>
+    <PrimaryButton
+      >Mirá nuestros servicios <ArrowRight className='size-5' /></PrimaryButton
+    >
   </main>
-  <style>
-    main {
-      margin: auto;
-      width: 800px;
-      max-width: calc(100% - 2rem);
-      color: white;
-      font-size: 20px;
-      line-height: 1.6;
-    }
-    .text-gradient {
-      background-image: var(--accent-gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 400%;
-      background-position: 0%;
-    }
-  </style>
 </Layout>
+<style>
+  main {
+    margin: auto;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+</style>
+../components/ArrowRight
