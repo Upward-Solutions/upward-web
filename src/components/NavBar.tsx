@@ -1,12 +1,13 @@
 import React from 'react';
 import UpwardLogo from './UpwardLogo';
+import Menu from './Menu';
 
 const NavBar: React.FunctionComponent = () => {
   return (
-    <header className='bg-red-400 p-4'>
+    <header className='p-4'>
       <nav className='flex justify-between'>
         <UpwardLogo className='size-8' />
-        <UpwardLogo className='size-8' />
+        <Menu className='size-8 text-white' />
       </nav>
     </header>
   );
