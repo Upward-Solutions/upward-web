@@ -8,12 +8,18 @@ export default {
         primary: '#00A7B7',
         'primary-hover': '#00838F',
       },
+      screens: {
+        mobile: '550px',
+        tablet: '834px',
+        desktop: '1024px',
+      },
       fontFamily: {
         base: ['Space Grotesk Variable', 'sans-serif'],
       },
       fontSize: {
         base: ['1rem', '1.5rem'],
         'base-label': ['1rem', '1rem'],
+        'xl-label': ['1.25rem', '1.25rem'],
         'page-title': ['3rem', '61px'],
       },
     },
