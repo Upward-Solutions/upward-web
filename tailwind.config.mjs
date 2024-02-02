@@ -6,6 +6,7 @@ export default {
       colors: {
         'dark-background': '#0d0d0d',
         primary: '#00A7B7',
+        'primary-hover': '#00838F',
       },
       fontFamily: {
         base: ['Space Grotesk Variable', 'sans-serif'],
