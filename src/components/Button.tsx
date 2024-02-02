@@ -32,12 +32,17 @@ function injectClassOnSlotString(
 const Slot: React.FunctionComponent<SlotProps> = (props) => {
   const { children, className } = props;
 
+  // If it's called inside a React component
+  if (children.props.children !== undefined) {
+    return React.cloneElement(children, { className });
+  }
+
+  // If it's called inside a Astro component(or page)
   const newValue = injectClassOnSlotString(children, className);
   const newChildren = {
     ...children,
     props: { ...children.props, value: newValue },
   };
-
   return React.cloneElement(newChildren);
 };
 
