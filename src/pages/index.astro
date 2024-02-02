@@ -1,6 +1,6 @@
 ---
-import PrimaryButton from '../components/PrimaryButton';
-import ArrowRight from '../components/ArrowRight';
+import Button from '../components/Button.tsx';
+import ArrowRight from '../components/ArrowRight.tsx';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -18,26 +18,29 @@ import Layout from '../layouts/Layout.astro';
       ayudarte a alcanzar el futuro que tu negocio esté listo para los nuevos
       desafíos del mundo digital.
     </p>
-    <PrimaryButton
-      >Mirá nuestros servicios <ArrowRight className='size-5' /></PrimaryButton
-    >
+    <Button asChild>
+      <a href='#'>
+        Mirá nuestros servicios <ArrowRight className='size-5' />
+      </a>
+    </Button>
   </main>
+  <style>
+    main {
+      margin: auto;
+      width: 800px;
+      max-width: calc(100% - 2rem);
+      color: white;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    .text-gradient {
+      background-image: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+    }
+  </style>
+  ../components/ArrowRight
 </Layout>
-<style>
-  main {
-    margin: auto;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-</style>
-../components/ArrowRight
+../components/Button
