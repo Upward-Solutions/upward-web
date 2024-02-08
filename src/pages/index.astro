@@ -1,34 +1,40 @@
 ---
 import Button from '../components/Button.tsx';
 import ArrowRight from '../components/ArrowRight.tsx';
+import Section from '../components/Section.tsx';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Upward web'>
-  <main class='flex flex-col gap-8'>
-    <h1 class='font-base text-page-title'>
-      Tu agencia de Desarrollo Digital <span class='text-gradient'
-        >a medida</span
-      >
-    </h1>
-    <p class='text-base'>
-      Somos un equipo de jóvenes apasionados por la tecnología y la innovación.
-      El futuro llega cada vez más rápido y queremos ser parte de ese proceso de
-      transformación. Pero como no queremos hacerlo solos, trabajamos para
-      ayudarte a alcanzar el futuro que tu negocio esté listo para los nuevos
-      desafíos del mundo digital.
-    </p>
-    <Button asChild>
-      <a href='#'>
-        Mirá nuestros servicios <ArrowRight className='size-5' />
-      </a>
-    </Button>
+  <main class='flex flex-col'>
+    <Section>
+      <h1 class='font-base text-page-title'>
+        Tu agencia de Desarrollo Digital <span class='text-gradient'
+          >a medida</span
+        >
+      </h1>
+      <p class='text-base'>
+        Somos un equipo de jóvenes apasionados por la tecnología y la
+        innovación. El futuro llega cada vez más rápido y queremos ser parte de
+        ese proceso de transformación. Pero como no queremos hacerlo solos,
+        trabajamos para ayudarte a alcanzar el futuro que tu negocio esté listo
+        para los nuevos desafíos del mundo digital.
+      </p>
+      <Button asChild>
+        <a href='#'>
+          Mirá nuestros servicios <ArrowRight className='size-5' />
+        </a>
+      </Button>
+    </Section>
+    <Section>Nosotros</Section>
+    <Section>Servicios</Section>
+    <Section>Casos de éxito</Section>
   </main>
   <style>
     main {
-      margin: auto;
-      width: 800px;
-      max-width: calc(100% - 2rem);
+      /* margin: auto; */
+      /* width: 800px; */
+      /* max-width: calc(100% - 8rem); */
       color: white;
       font-size: 20px;
       line-height: 1.6;
