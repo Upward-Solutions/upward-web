@@ -32,7 +32,7 @@ const renderNavLinks = (): React.ReactNode[] =>
   navLinks.map((navLink, index) => {
     return (
       // TODO: Convert to a standalone component (NavLink component)
-      <li key={`${navLink.href}-${index}`}>
+      <li key={`${navLink.href}-${index}`} className='ml-16 last:ml-14'>
         {navLink.asButton === true ? (
           <Button asChild>
             <a href={navLink.href}>
@@ -54,12 +54,12 @@ const renderNavLinks = (): React.ReactNode[] =>
 const NavBar: React.FunctionComponent = () => {
   return (
     <header className='p-4'>
-      <nav className='flex justify-between'>
-        <UpwardLogo className='size-8' />
+      <nav className='flex justify-between items-center'>
+        <UpwardLogo className='size-11' />
         <div className='tablet:hidden flex'>
           <Menu className='size-8 text-white' />
         </div>
-        <ul className='hidden tablet:flex text-white gap-16 items-center'>
+        <ul className='hidden tablet:flex text-white items-center '>
           {renderNavLinks()}
         </ul>
       </nav>
