@@ -8,7 +8,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout title='Upward web'>
   <main class='flex flex-col'>
     <Section>
-      <h1 class='font-base text-page-title'>
+      <h1 class='font-base text-page-title font-medium'>
         Tu agencia de Desarrollo Digital <span class='text-gradient'
           >a medida</span
         >
@@ -26,9 +26,23 @@ import Layout from '../layouts/Layout.astro';
         </a>
       </Button>
     </Section>
-    <Section>Nosotros</Section>
-    <Section>Servicios</Section>
-    <Section>Casos de éxito</Section>
+    <Section>
+      <h2 class='font-base text-section-title font-medium'>
+        <span class='text-gradient'>Nosotros</span>
+      </h2>
+      <h3 class='text-section-subtitle'>Nuestro Equipo</h3>
+      <h3 class='text-section-subtitle'>Nuestros Valores</h3>
+    </Section>
+    <Section>
+      <h2 class='font-base text-section-title font-medium'>
+        <span class='text-gradient'>Servicios</span>
+      </h2>
+    </Section>
+    <Section>
+      <h2 class='font-base text-section-title font-medium'>
+        <span class='text-gradient'>Casos de éxito</span>
+      </h2>
+    </Section>
   </main>
   <style>
     main {

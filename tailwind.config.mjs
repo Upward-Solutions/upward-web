@@ -21,6 +21,8 @@ export default {
         base: ['1rem', '1.5rem'],
         'base-label': ['1rem', '1rem'],
         'xl-label': ['1.25rem', '1.25rem'],
+        'section-title': ['2.5rem', '53px'],
+        'section-subtitle': ['1.5rem', '37px'],
         'page-title': ['3rem', '61px'],
       },
     },
