@@ -54,7 +54,7 @@ const Button = React.forwardRef<HTMLButtonElement, Props>((props, ref) => {
   return (
     <Comp
       ref={ref}
-      className='flex w-fit gap-2 items-center bg-primary text-base-label py-3 px-5 text-dark-background font-medium hover:bg-primary-hover transition-all duration-300'
+      className='flex w-fit gap-2 items-center bg-primary text-base-label py-3 px-5 text-background font-medium hover:bg-primary-hover transition-all duration-300'
       {...restProps}
     />
   );
