@@ -6,7 +6,7 @@ interface Props {
 
 const Section: React.FunctionComponent<Props> = ({ children }) => {
   return (
-    <section className='even:bg-background-100 flex flex-col gap-8 p-16'>
+    <section className='even:bg-background-100 flex flex-col gap-8 p-8 tablet:p-16'>
       {children}
     </section>
   );
