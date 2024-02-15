@@ -8,6 +8,7 @@ export default {
         'background-100': '#151515',
         primary: '#00A7B7',
         'primary-hover': '#00838F',
+        paragraph: '#B0B0B0',
       },
       screens: {
         mobile: '550px',
