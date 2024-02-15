@@ -15,7 +15,7 @@ const services = [
     ],
   },
   {
-    title: 'Modernización',
+    title: 'Consultoría',
     bulletPoints: [
       'Si necesitás contratar personal especializado en el mundo digital te ayudamos a elegir el mejor perfil que necesita tu negocio.',
       'Ayudamos a tu equipo de desarrollo a modernizarse y adoptar las mejores prácticas de la industria.',
