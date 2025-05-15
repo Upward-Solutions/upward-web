@@ -28,13 +28,12 @@ jobs:
           cache: 'npm'
       
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       
       - name: Build with Next.js
         run: npm run build
       
-      - name: Static HTML export with Next.js
-        run: npx next export || npm run build -- -o out
+      # Next.js output is already in the 'out' directory after build
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
