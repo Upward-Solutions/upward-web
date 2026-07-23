@@ -1,0 +1,16 @@
+.foot { border-top: 1px solid var(--line); padding: 34px 0; }
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.inner p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+.inner a { text-decoration: none; }
+.inner a:hover { color: var(--ink); }

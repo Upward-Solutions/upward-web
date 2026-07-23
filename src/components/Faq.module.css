@@ -1,0 +1,34 @@
+.faq { margin-top: 48px; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+
+.faq summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 24px 44px 24px 0;
+  position: relative;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 1.06rem;
+  letter-spacing: -0.01em;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: '';
+  position: absolute;
+  right: 6px;
+  top: 32px;
+  width: 11px;
+  height: 11px;
+  border-right: 1.5px solid var(--teal);
+  border-bottom: 1.5px solid var(--teal);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+.faq details[open] summary::after { transform: rotate(-135deg); top: 36px; }
+
+.answer {
+  padding: 0 40px 26px 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  max-width: 70ch;
+}

@@ -1,0 +1,30 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: clamp(56px, 7vw, 88px);
+}
+
+.title { max-width: 19ch; }
+.rise {
+  background: linear-gradient(96deg, var(--teal), var(--amber) 62%, var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sub { margin-top: 26px; }
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.note {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.76rem;
+  color: var(--muted);
+  margin-top: 22px;
+  letter-spacing: 0.02em;
+}

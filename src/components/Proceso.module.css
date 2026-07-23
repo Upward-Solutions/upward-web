@@ -1,0 +1,46 @@
+/* Las etapas suben de izquierda a derecha: cada una se apoya
+   un escalón más arriba que la anterior. */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-top: 64px;
+  align-items: end;
+}
+
+.step { position: relative; }
+.step:nth-child(1) { padding-bottom: 0; }
+.step:nth-child(2) { padding-bottom: 26px; }
+.step:nth-child(3) { padding-bottom: 52px; }
+.step:nth-child(4) { padding-bottom: 78px; }
+.step:nth-child(5) { padding-bottom: 104px; }
+.step:nth-child(5) .n { color: var(--orange); }
+
+.rung { display: block; height: 1px; background: var(--line); margin-bottom: 18px; }
+
+.n {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--teal);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.step h3 { margin-bottom: 8px; }
+.step p { color: var(--muted); font-size: 0.92rem; }
+
+@media (max-width: 900px) {
+  .steps { grid-template-columns: 1fr; gap: 0; align-items: stretch; margin-top: 44px; }
+  .step,
+  .step:nth-child(1),
+  .step:nth-child(2),
+  .step:nth-child(3),
+  .step:nth-child(4),
+  .step:nth-child(5) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-top: 1px solid var(--line);
+  }
+  .rung { display: none; }
+}

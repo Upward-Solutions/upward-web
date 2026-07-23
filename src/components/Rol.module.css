@@ -1,0 +1,18 @@
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+
+.intro { margin-top: 22px; }
+.cta { margin-top: 32px; }
+
+.claims { display: grid; gap: 2px; margin-top: 8px; }
+.claim { padding: 22px 0; border-top: 1px solid rgba(255, 255, 255, 0.16); }
+.claim h3 { color: #fff; margin-bottom: 8px; }
+.claim p { color: rgba(255, 255, 255, 0.62); font-size: 0.97rem; }
+
+@media (max-width: 860px) {
+  .split { grid-template-columns: 1fr; }
+}

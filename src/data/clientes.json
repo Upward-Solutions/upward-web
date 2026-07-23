@@ -1,0 +1,17 @@
+[
+  {
+    "logo": "/clientes/cliente-1.svg",
+    "titulo": "Nombre del cliente",
+    "descripcion": "Una línea sobre qué construimos y qué resolvió. Dos renglones alcanzan."
+  },
+  {
+    "logo": "/clientes/cliente-2.svg",
+    "titulo": "Nombre del cliente",
+    "descripcion": "Una línea sobre qué construimos y qué resolvió. Dos renglones alcanzan."
+  },
+  {
+    "logo": "/clientes/cliente-3.svg",
+    "titulo": "Nombre del cliente",
+    "descripcion": "Una línea sobre qué construimos y qué resolvió. Dos renglones alcanzan."
+  }
+]
